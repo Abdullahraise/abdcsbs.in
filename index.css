@@ -231,7 +231,8 @@ ul {
 
 .footer {
   background-color: #000000d7;
-  padding: 70px 0;
+  padding: 10px 0;
+  border-style: groove;
 }
 
 .footer-col {
