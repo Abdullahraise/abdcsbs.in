@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Disable scrollbars */
+}
+
+body {
+    position: relative;
+}
+
+.about-section {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    animation: fadeIn 2s ease-in-out; /* Apply fading animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.inner-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.team-member {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 20px; /* Apply border radius */
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.team-member p {
+    font-style: italic;
+    color: #000000;
+    margin-top: 5px;
+}
+.back-button {
+    width: 120px; /* Adjusted width */
+    height: 40px; /* Adjusted height */
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Ensure button is above SVG */
+    border-radius: 5px; /* Adjusted border radius */
+    display: flex; /* Align text properly */
+    justify-content: center; /* Align text properly */
+    align-items: center; /* Align text properly */
+    font-size: 16px; /* Adjusted font size */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.back-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px; /* Adjusted border radius */
+}
+
+.back-button:hover:before {
+    opacity: 1;
+}
+
+.back-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 5px; /* Adjusted border radius */
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure SVG is behind other content */
+}

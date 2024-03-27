@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    color: #000;
+    background: white;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    text-decoration: wavy;
+    border: none;
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+}
+
+.dashboard-title { /* Added style for dashboard title */
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Updated styles for doctor and patient list */
+.doctor-list {
+    list-style: none; /* Remove bullet points */
+}
+
+.doctor-item {
+    margin-bottom: 20px;
+}
+
+.doctor-name {
+    margin-top: 0;
+}
+
+/* Login Form Styles */
+form {
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    padding: 3em;
+    border: none;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); Improved box shadow */
+    transition: all 0.2s ease-in-out;
+}
+
+p {
+    font-weight: 500;
+    color: #000;
+    opacity: 0.9; /* Increased opacity */
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input, select {
+    background: rgba(255, 255, 255, 0.3); /* Changed background */
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px; /* Reduced border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Improved box shadow */
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="button"] {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1em;
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    color: #fff; /* Changed text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+}
